@@ -1,0 +1,23 @@
+{
+  "name": "eos-proof-system",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "eosjs": "^22.1.0",
+    "express": "^4.19.2",
+    "multer": "^1.4.5-lts.1",
+    "node-fetch": "^2.6.1",
+    "sqlite3": "^5.1.7"
+  }
+}
