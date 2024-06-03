@@ -1,0 +1,128 @@
+{
+    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT ",
+    "version": "eosio::abi/1.2",
+    "types": [],
+    "structs": [
+        {
+            "name": "addproof",
+            "base": "",
+            "fields": [
+                {
+                    "name": "user",
+                    "type": "name"
+                },
+                {
+                    "name": "datahash",
+                    "type": "checksum256"
+                },
+                {
+                    "name": "block_num",
+                    "type": "uint32"
+                },
+                {
+                    "name": "block_id",
+                    "type": "checksum256"
+                }
+            ]
+        },
+        {
+            "name": "getproof",
+            "base": "",
+            "fields": [
+                {
+                    "name": "block_id",
+                    "type": "checksum256"
+                }
+            ]
+        },
+        {
+            "name": "getproofbyid",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "proof_data",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "user",
+                    "type": "name"
+                },
+                {
+                    "name": "datahash",
+                    "type": "checksum256"
+                },
+                {
+                    "name": "block_num",
+                    "type": "uint32"
+                },
+                {
+                    "name": "block_id",
+                    "type": "checksum256"
+                },
+                {
+                    "name": "timestamp",
+                    "type": "time_point"
+                }
+            ]
+        },
+        {
+            "name": "verifyproof",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "datahash",
+                    "type": "checksum256"
+                }
+            ]
+        }
+    ],
+    "actions": [
+        {
+            "name": "addproof",
+            "type": "addproof",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "getproof",
+            "type": "getproof",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "getproofbyid",
+            "type": "getproofbyid",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "verifyproof",
+            "type": "verifyproof",
+            "ricardian_contract": ""
+        }
+    ],
+    "tables": [
+        {
+            "name": "proofs",
+            "type": "proof_data",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        }
+    ],
+    "kv_tables": {},
+    "ricardian_clauses": [],
+    "variants": [],
+    "action_results": []
+}
